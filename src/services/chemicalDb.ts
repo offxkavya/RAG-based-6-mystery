@@ -379,5 +379,163 @@ export const CHEMICAL_DATABASE: Record<string, Chemical> = {
   },
 
   // Lab Reagents & Indicators
+  'ba_cl2_aq': {
+    id: 'ba_cl2_aq',
+    name: 'Barium Chloride Reagent',
+    formula: 'BaCl2 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.1)',
+    category: 'reagent',
+    synonyms: ['barium chloride solution', 'bacl2 aq', 'bacl2 solution'],
+    description: 'Aqueous barium chloride solution. Used to precipitate sulfate ions as white Barium Sulfate.',
+    safetyFlags: ['toxic'],
+    hazardsDescription: 'Toxic if swallowed.'
+  },
+  'ag_no3_aq': {
+    id: 'ag_no3_aq',
+    name: 'Silver Nitrate Reagent',
+    formula: 'AgNO3 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.1)',
+    category: 'reagent',
+    synonyms: ['silver nitrate solution', 'agno3 aq', 'agno3 solution'],
+    description: 'Aqueous silver nitrate. Precipitates halide ions (Cl-, Br-, I-) with characteristic colors. Stains skin black in sunlight.',
+    safetyFlags: ['corrosive', 'oxidizer', 'staining'],
+    hazardsDescription: 'Causes burns. Stains organic materials (including skin) black due to metallic silver reduction.'
+  },
+  'k_mn_o4_aq': {
+    id: 'k_mn_o4_aq',
+    name: 'Potassium Permanganate Reagent',
+    formula: 'KMnO4 (aq)',
+    state: 'aqueous',
+    color: '#86198f', // Dark Purple/Magenta
+    category: 'reagent',
+    synonyms: ['potassium permanganate', 'kmno4', 'kmno4 solution', 'permanganate'],
+    description: 'Deep purple aqueous solution. Strong oxidizing agent. Used as self-indicator in redox titrations.',
+    safetyFlags: ['oxidizer', 'staining', 'toxic'],
+    hazardsDescription: 'Strong oxidizer. Stains skin brown. Toxic if swallowed.'
+  },
+  'fe_so4_aq': {
+    id: 'fe_so4_aq',
+    name: 'Ferrous Sulfate Solution',
+    formula: 'FeSO4 (aq)',
+    state: 'aqueous',
+    color: 'rgba(209, 250, 229, 0.8)', // Very pale green
+    category: 'reagent',
+    synonyms: ['ferrous sulfate', 'feso4', 'mohr\'s salt solution', 'feso4 solution', 'green vitriol solution'],
+    description: 'Freshly prepared pale green solution of iron(ii) sulfate. Essential for the nitrate brown ring test.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Harmful if swallowed. Causes skin and eye irritation. Easily oxidizes in air.'
+  },
+  'h2_s_water': {
+    id: 'h2_s_water',
+    name: 'Hydrogen Sulfide Water',
+    formula: 'H2S (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'reagent',
+    synonyms: ['hydrogen sulfide water', 'h2s', 'h2s water', 'hydrogen sulfide'],
+    description: 'Aqueous solution of H2S gas. Smells intensely of rotten eggs. Used as Group II cation group reagent.',
+    safetyFlags: ['toxic', 'foul-odor'],
+    hazardsDescription: 'H2S is extremely toxic, flammable and dangerous. In a real lab, must be generated in a Kipp\'s apparatus.'
+  },
+  'nh4_c2o4_aq': {
+    id: 'nh4_c2o4_aq',
+    name: 'Ammonium Oxalate Reagent',
+    formula: '(NH4)2C2O4 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.1)',
+    category: 'reagent',
+    synonyms: ['ammonium oxalate solution', '(nh4)2c2o4 aq', 'ammonium oxalate'],
+    description: 'Aqueous ammonium oxalate solution. Precipitates Calcium ions as white Calcium Oxalate.',
+    safetyFlags: ['toxic'],
+    hazardsDescription: 'Harmful if absorbed through skin.'
+  },
+  'k4_fe_cn_6': {
+    id: 'k4_fe_cn_6',
+    name: 'Potassium Ferrocyanide Solution',
+    formula: 'K4[Fe(CN)6]',
+    state: 'aqueous',
+    color: 'rgba(253, 224, 71, 0.5)', // Pale yellow
+    category: 'reagent',
+    synonyms: ['potassium ferrocyanide', 'k4[fe(cn)6]', 'ferrocyanide'],
+    description: 'Yellow solution. Gives Prussian blue precipitate with Fe3+ and chocolate brown with Cu2+.',
+    safetyFlags: [],
+    hazardsDescription: 'Low toxicity under neutral conditions, but contact with strong acids releases toxic hydrogen cyanide gas!'
+  },
+  'k_scn': {
+    id: 'k_scn',
+    name: 'Potassium Thiocyanate Solution',
+    formula: 'KSCN',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.1)',
+    category: 'reagent',
+    synonyms: ['potassium thiocyanate', 'kscn', 'thiocyanate'],
+    description: 'Clear solution. Gives blood-red coloration with Fe3+ ions due to [Fe(SCN)]2+ complex.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Harmful if swallowed or in contact with skin.'
+  },
+  'nessler_reagent': {
+    id: 'nessler_reagent',
+    name: 'Nessler\'s Reagent',
+    formula: 'K2[HgI4] / KOH',
+    state: 'aqueous',
+    color: 'rgba(254, 240, 138, 0.6)', // Pale yellow alkaline solution
+    category: 'reagent',
+    synonyms: ['nesslers reagent', 'nessler reagent', 'k2hgi4'],
+    description: 'Alkaline potassium tetraiodomercurate(II). Gives brown precipitate or coloration with Ammonium ions (NH4+).',
+    safetyFlags: ['toxic', 'corrosive'],
+    hazardsDescription: 'Contains mercury! Extremely toxic. Accumulates in the body. Corrosive due to KOH.'
+  },
+  'dmg_reagent': {
+    id: 'dmg_reagent',
+    name: 'Dimethylglyoxime Reagent',
+    formula: 'C4H8N2O2 (in EtOH)',
+    state: 'aqueous', // dissolved in alcohol
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'reagent',
+    synonyms: ['dmg', 'dimethylglyoxime', 'dmg solution'],
+    description: 'Dimethylglyoxime dissolved in ethanol. Gives brilliant cherry-red precipitate with Ni2+ in ammoniacal medium.',
+    safetyFlags: ['flammable'],
+    hazardsDescription: 'Flammable liquid due to ethanol solvent.'
+  },
+  'starch_indicator': {
+    id: 'starch_indicator',
+    name: 'Starch Indicator',
+    formula: 'Starch (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.4)', // cloudy white
+    category: 'indicator',
+    synonyms: ['starch', 'starch solution', 'starch indicator'],
+    description: 'Cloudy white colloidal solution. Turns intense dark blue-black in the presence of iodine.',
+    safetyFlags: [],
+    hazardsDescription: 'Non-hazardous.'
+  },
+  'phenolphthalein': {
+    id: 'phenolphthalein',
+    name: 'Phenolphthalein Indicator',
+    formula: 'C20H14O4 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.1)',
+    category: 'indicator',
+    synonyms: ['phenolphthalein', 'phenolphthalein indicator', 'hph'],
+    description: 'Colorless in acidic/neutral solution, turns deep pink/magenta in basic solution (pH > 8.2).',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Suspected of causing genetic defects. Avoid ingestion.'
+  },
+  'methyl_orange': {
+    id: 'methyl_orange',
+    name: 'Methyl Orange Indicator',
+    formula: 'C14H14N3NaO3S',
+    state: 'aqueous',
+    color: '#f97316', // Orange
+    category: 'indicator',
+    synonyms: ['methyl orange', 'methyl orange indicator'],
+    description: 'Red in acidic solution (pH < 3.1), yellow in basic solution (pH > 4.4).',
+    safetyFlags: ['toxic'],
+    hazardsDescription: 'Toxic if swallowed.'
+  },
+
+  // Organic chemistry test samples
   
 };
