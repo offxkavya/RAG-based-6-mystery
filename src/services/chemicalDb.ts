@@ -135,5 +135,151 @@ export const CHEMICAL_DATABASE: Record<string, Chemical> = {
   },
 
   // Anions (primarily sodium or potassium salts for testing)
+  'na2_co3': {
+    id: 'na2_co3',
+    name: 'Sodium Carbonate',
+    formula: 'Na2CO3',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium carbonate', 'washing soda', 'soda ash', 'na2co3'],
+    description: 'White powder, soluble in water. Gives carbon dioxide gas with acids.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Causes serious eye irritation.'
+  },
+  'na2_s': {
+    id: 'na2_s',
+    name: 'Sodium Sulfide',
+    formula: 'Na2S',
+    state: 'solid',
+    color: '#fef08a', // Yellowish
+    category: 'anion_salt',
+    synonyms: ['sodium sulfide', 'na2s'],
+    description: 'Yellow-to-red crystalline flakes, soluble in water. Smells like rotten eggs when acidified (H2S gas).',
+    safetyFlags: ['corrosive', 'toxic', 'environment-hazard'],
+    hazardsDescription: 'Very toxic to aquatic life. Contact with acids liberates toxic gas.'
+  },
+  'na2_so3': {
+    id: 'na2_so3',
+    name: 'Sodium Sulfite',
+    formula: 'Na2SO3',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium sulfite', 'na2so3'],
+    description: 'White powder, soluble in water. Liberates sulfur dioxide gas with dilute acids.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'May cause allergic reactions in sensitive individuals.'
+  },
+  'na2_so4': {
+    id: 'na2_so4',
+    name: 'Sodium Sulfate',
+    formula: 'Na2SO4',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium sulfate', 'na2so4'],
+    description: 'White crystalline solid, soluble in water. Used to analyze sulfate anion.',
+    safetyFlags: [],
+    hazardsDescription: 'Relatively safe compound.'
+  },
+  'na_no2': {
+    id: 'na_no2',
+    name: 'Sodium Nitrite',
+    formula: 'NaNO2',
+    state: 'solid',
+    color: '#fef08a', // slightly yellowish white
+    category: 'anion_salt',
+    synonyms: ['sodium nitrite', 'nano2'],
+    description: 'White to slightly yellowish crystalline powder. Highly soluble. Liberates brown nitrogen dioxide gas with acids.',
+    safetyFlags: ['toxic', 'oxidizer'],
+    hazardsDescription: 'Toxic if swallowed. May intensify fire; oxidizer.'
+  },
+  'k_no3': {
+    id: 'k_no3',
+    name: 'Potassium Nitrate',
+    formula: 'KNO3',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['potassium nitrate', 'saltpetre', 'kno3'],
+    description: 'White powder, soluble in water. Used in the brown ring test for nitrate identification.',
+    safetyFlags: ['oxidizer'],
+    hazardsDescription: 'Strong oxidizer; may ignite organic materials on contact.'
+  },
+  'na_cl': {
+    id: 'na_cl',
+    name: 'Sodium Chloride',
+    formula: 'NaCl',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium chloride', 'common salt', 'nacl', 'table salt'],
+    description: 'White crystalline table salt. Used for chloride tests.',
+    safetyFlags: [],
+    hazardsDescription: 'Safe in standard concentrations.'
+  },
+  'k_br': {
+    id: 'k_br',
+    name: 'Potassium Bromide',
+    formula: 'KBr',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['potassium bromide', 'kbr'],
+    description: 'White crystals, highly soluble in water. Liberates red-brown bromine gas with conc. H2SO4.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Causes skin and eye irritation.'
+  },
+  'k_i': {
+    id: 'k_i',
+    name: 'Potassium Iodide',
+    formula: 'KI',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['potassium iodide', 'ki'],
+    description: 'White crystalline solid, turns yellow in air due to iodine oxidation. Liberates violet iodine vapor with conc. H2SO4.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Causes skin irritation and eye irritation.'
+  },
+  'na3_po4': {
+    id: 'na3_po4',
+    name: 'Sodium Phosphate',
+    formula: 'Na3PO4',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium phosphate', 'na3po4', 'trisodium phosphate'],
+    description: 'White crystalline powder. Soluble in water. Used for phosphate analysis.',
+    safetyFlags: ['irritant'],
+    hazardsDescription: 'Highly alkaline in solution. Causes severe eye and skin irritation.'
+  },
+  'na2_c2o4': {
+    id: 'na2_c2o4',
+    name: 'Sodium Oxalate',
+    formula: 'Na2C2O4',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium oxalate', 'na2c2o4'],
+    description: 'White powder, soluble in water. Used for oxalate analysis and redox titrations.',
+    safetyFlags: ['toxic'],
+    hazardsDescription: 'Harmful in contact with skin and if swallowed. Forms toxic calcium oxalate in kidneys.'
+  },
+  'ch3coo_na': {
+    id: 'ch3coo_na',
+    name: 'Sodium Acetate',
+    formula: 'CH3COONa',
+    state: 'solid',
+    color: '#ffffff',
+    category: 'anion_salt',
+    synonyms: ['sodium acetate', 'ch3coona'],
+    description: 'White crystalline powder. Soluble in water. Smells like vinegar when acidified.',
+    safetyFlags: [],
+    hazardsDescription: 'Generally safe.'
+  },
+
+  // Acids & Bases
   
 };
