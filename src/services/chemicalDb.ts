@@ -537,5 +537,107 @@ export const CHEMICAL_DATABASE: Record<string, Chemical> = {
   },
 
   // Organic chemistry test samples
-  
+  'glucose_sol': {
+    id: 'glucose_sol',
+    name: 'Glucose Solution',
+    formula: 'C6H12O6 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'organic',
+    synonyms: ['glucose', 'glucose solution', 'dextrose'],
+    description: 'Reducing sugar solution. Positive Fehling\'s, Benedict\'s, and Tollen\'s test.',
+    safetyFlags: []
+  },
+  'sucrose_sol': {
+    id: 'sucrose_sol',
+    name: 'Sucrose Solution',
+    formula: 'C12H22O11 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'organic',
+    synonyms: ['sucrose', 'sucrose solution', 'cane sugar'],
+    description: 'Non-reducing disaccharide. Negative Fehling\'s/Benedict\'s test unless hydrolyzed.',
+    safetyFlags: []
+  },
+  'egg_albumin': {
+    id: 'egg_albumin',
+    name: 'Egg Albumin Sol',
+    formula: 'Protein Sol',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.5)', // cloudy translucent
+    category: 'organic',
+    synonyms: ['egg albumin', 'albumin sol', 'protein sol', 'albumin'],
+    description: 'Colloidal protein solution. Positive Biuret, Ninhydrin, and Xanthoproteic tests.',
+    safetyFlags: []
+  },
+  'starch_sol': {
+    id: 'starch_sol',
+    name: 'Starch Sol (Colloid)',
+    formula: '(C6H10O5)n (aq)',
+    state: 'aqueous',
+    color: 'rgba(240, 240, 240, 0.5)',
+    category: 'organic',
+    synonyms: ['starch sol', 'starch colloid', 'starch solution'],
+    description: 'Colloidal starch prepared in hot water. Turns dark blue-black with iodine.',
+    safetyFlags: []
+  },
+  'urea_sol': {
+    id: 'urea_sol',
+    name: 'Urea Solution',
+    formula: 'NH2CONH2 (aq)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'organic',
+    synonyms: ['urea', 'urea solution', 'nh2conh2'],
+    description: 'Organic amide solution. Liberates ammonia gas upon heating with NaOH.',
+    safetyFlags: []
+  },
+  'phenol_pure': {
+    id: 'phenol_pure',
+    name: 'Phenol Solution',
+    formula: 'C6H5OH (aq)',
+    state: 'aqueous',
+    color: 'rgba(253, 244, 245, 0.3)', // colorless to pinkish
+    category: 'organic',
+    synonyms: ['phenol', 'carbolic acid', 'c6h5oh'],
+    description: 'Aromatic alcohol solution. Gives characteristic violet coloration with neutral FeCl3.',
+    safetyFlags: ['toxic', 'corrosive'],
+    hazardsDescription: 'Highly toxic and corrosive. Absorbs through skin and causes local anesthesia and deep chemical burns.'
+  },
+
+  // Other reagents/compounds
+  'acetic_acid': {
+    id: 'acetic_acid',
+    name: 'Acetic Acid',
+    formula: 'CH3COOH',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'acid',
+    synonyms: ['acetic acid', 'ethanoic acid', 'vinegar'],
+    description: 'Weak organic acid. Used in absorption experiments and functional group tests.',
+    safetyFlags: ['irritant']
+  },
+  'activated_charcoal': {
+    id: 'activated_charcoal',
+    name: 'Activated Charcoal',
+    formula: 'C (Charcoal)',
+    state: 'solid',
+    color: '#111827', // Black
+    category: 'other',
+    synonyms: ['activated charcoal', 'charcoal', 'carbon powder'],
+    description: 'Fine black carbon powder with extremely high surface area. Used in adsorption studies.',
+    safetyFlags: [],
+    hazardsDescription: 'Relatively safe, but avoid breathing dust.'
+  },
+  'water': {
+    id: 'water',
+    name: 'Distilled Water',
+    formula: 'H2O',
+    state: 'liquid',
+    color: 'rgba(255, 255, 255, 0.1)',
+    category: 'other',
+    synonyms: ['water', 'distilled water', 'h2o'],
+    description: 'Pure solvent for chemical preparations.',
+    safetyFlags: []
+  }
 };
