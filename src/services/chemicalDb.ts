@@ -281,5 +281,103 @@ export const CHEMICAL_DATABASE: Record<string, Chemical> = {
   },
 
   // Acids & Bases
+  'dil_hcl': {
+    id: 'dil_hcl',
+    name: 'Dilute Hydrochloric Acid',
+    formula: 'HCl (dil)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)', // clear/water-like
+    category: 'acid',
+    synonyms: ['dilute hydrochloric acid', 'dil hcl', 'dilute hcl', 'hcl dil'],
+    description: 'Aqueous solution of hydrogen chloride (~2M). Primary reagent for Group I cations and dilute acid group anions.',
+    safetyFlags: ['corrosive', 'irritant'],
+    hazardsDescription: 'Corrosive. Can cause skin irritation and eye damage.'
+  },
+  'conc_hcl': {
+    id: 'conc_hcl',
+    name: 'Concentrated Hydrochloric Acid',
+    formula: 'HCl (conc)',
+    state: 'liquid',
+    color: 'rgba(240, 240, 250, 0.4)', // slightly yellow/fuming
+    category: 'acid',
+    synonyms: ['concentrated hydrochloric acid', 'conc hcl', 'concentrated hcl', 'hcl conc', 'muriatic acid'],
+    description: 'Concentrated aqueous hydrogen chloride (~12M). Fuming liquid with pungent odor.',
+    safetyFlags: ['corrosive', 'toxic', 'irritant'],
+    hazardsDescription: 'Highly corrosive. Causes severe skin burns and eye damage. Fumes are extremely irritating to respiration.'
+  },
+  'dil_h2so4': {
+    id: 'dil_h2so4',
+    name: 'Dilute Sulfuric Acid',
+    formula: 'H2SO4 (dil)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'acid',
+    synonyms: ['dilute sulfuric acid', 'dil h2so4', 'dilute h2so4', 'h2so4 dil'],
+    description: 'Aqueous sulfuric acid solution (~1M). Used for identifying carbonate, sulfide, sulfite, and nitrite anions.',
+    safetyFlags: ['corrosive'],
+    hazardsDescription: 'Causes severe skin burns and eye damage.'
+  },
+  'conc_h2so4': {
+    id: 'conc_h2so4',
+    name: 'Concentrated Sulfuric Acid',
+    formula: 'H2SO4 (conc)',
+    state: 'liquid',
+    color: 'rgba(230, 230, 240, 0.6)', // oily, dense
+    category: 'acid',
+    synonyms: ['concentrated sulfuric acid', 'conc h2so4', 'concentrated h2so4', 'h2so4 conc', 'oil of vitriol'],
+    description: 'Highly concentrated sulfuric acid (~18M). Oily, extremely hygroscopic and dehydrating.',
+    safetyFlags: ['corrosive', 'reactive'],
+    hazardsDescription: 'Extremely corrosive. Reacts violently with water generating extreme heat. Carbonizes organic matter on contact.'
+  },
+  'dil_hno3': {
+    id: 'dil_hno3',
+    name: 'Dilute Nitric Acid',
+    formula: 'HNO3 (dil)',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'acid',
+    synonyms: ['dilute nitric acid', 'dil hno3', 'dilute hno3', 'hno3 dil'],
+    description: 'Aqueous solution of nitric acid (~2M). Used in anion analysis (e.g. halide tests).',
+    safetyFlags: ['corrosive', 'oxidizer'],
+    hazardsDescription: 'Corrosive. Strong oxidizing agent.'
+  },
+  'conc_hno3': {
+    id: 'conc_hno3',
+    name: 'Concentrated Nitric Acid',
+    formula: 'HNO3 (conc)',
+    state: 'liquid',
+    color: 'rgba(254, 243, 199, 0.5)', // faint yellow due to NO2 decomposition
+    category: 'acid',
+    synonyms: ['concentrated nitric acid', 'conc hno3', 'concentrated hno3', 'hno3 conc'],
+    description: 'Concentrated nitric acid (~16M). Strong oxidizing agent. Stains skin yellow (xanthoproteic reaction).',
+    safetyFlags: ['corrosive', 'oxidizer', 'toxic'],
+    hazardsDescription: 'Severely corrosive. Causes skin burns. Contact with combustible materials may cause fire. Releases toxic NOx fumes.'
+  },
+  'na_oh': {
+    id: 'na_oh',
+    name: 'Sodium Hydroxide Solution',
+    formula: 'NaOH',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'base',
+    synonyms: ['sodium hydroxide', 'naoh', 'caustic soda', 'lye'],
+    description: 'Aqueous sodium hydroxide (~2M). Strong base used to precipitate metal cations and liberate ammonia gas from ammonium salts.',
+    safetyFlags: ['corrosive'],
+    hazardsDescription: 'Highly corrosive. Causes severe skin burns and serious eye damage.'
+  },
+  'nh4_oh': {
+    id: 'nh4_oh',
+    name: 'Ammonium Hydroxide Solution',
+    formula: 'NH4OH',
+    state: 'aqueous',
+    color: 'rgba(255, 255, 255, 0.2)',
+    category: 'base',
+    synonyms: ['ammonium hydroxide', 'nh4oh', 'ammonia solution', 'aqueous ammonia'],
+    description: 'Aqueous solution of ammonia (~2M). Weak base. Used as a group reagent and to dissolve precipitates (like AgCl or copper hydroxides).',
+    safetyFlags: ['corrosive', 'irritant', 'toxic'],
+    hazardsDescription: 'Corrosive. Vapor is highly irritating to the eyes and respiratory system.'
+  },
+
+  // Lab Reagents & Indicators
   
 };
