@@ -223,6 +223,84 @@ export function evaluateReaction(
   }
 
   // ==========================================
+  // CATION TEST: COPPER (Cu2+)
+  // ==========================================
+  if (has('cu_so4')) {
+    // 1. Cu2+ + H2S -> CuS black ppt
+    if (has('h2_s_water') || has('na2_s')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: { 
+          present: true, 
+          color: '#1f2937', // Black
+          type: 'powdery', 
+          details: 'Black precipitate of Copper Sulfide (CuS)' 
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'CuSO4 + H2S -> CuS↓ + H2SO4',
+        inference: 'Black precipitate formed. Group II cation (Cu2+) indicated.',
+        identifiedIon: 'Cu2+',
+        explanation: 'Copper(II) ions precipitate as black copper sulfide even in acidic medium (Group II).'
+      };
+    }
+
+    // 2. Cu2+ + NH4OH -> Pale blue ppt, dissolves in excess to Deep blue solution
+    if (has('nh4_oh') || has('na_oh')) {
+      const isAmmonia = has('nh4_oh');
+      
+      // Let's assume excess NH4OH or NaOH
+      if (isAmmonia && actionHistory.includes('excess_reagent')) {
+        return {
+          color: '#1e3a8a', // Deep inky blue
+          precipitate: { present: false, color: '', type: 'none', details: '' },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'CuSO4 + 4NH4OH -> [Cu(NH3)4]SO4 + 4H2O',
+          inference: 'Deep blue (inky blue) solution formed. Cu2+ confirmed.',
+          identifiedIon: 'Cu2+',
+          explanation: 'Copper(II) hydroxide initially precipitates as pale blue, but dissolves in excess ammonium hydroxide to form the soluble tetraamminecopper(II) complex, which exhibits a characteristic deep blue color.'
+        };
+      } else {
+        return {
+          color: 'rgba(59, 130, 246, 0.3)', // Pale blue solution
+          precipitate: { 
+            present: true, 
+            color: '#60a5fa', // pale blue
+            type: 'gelatinous', 
+            details: 'Pale blue precipitate of Copper Hydroxide Cu(OH)2' 
+          },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4',
+          inference: 'Pale blue precipitate formed. Cu2+ indicated.',
+          identifiedIon: 'Cu2+',
+          explanation: 'Copper(II) ions react with hydroxide ions to form a pale blue precipitate of copper(II) hydroxide.'
+        };
+      }
+    }
+
+    // 3. Cu2+ + K4[Fe(CN)6] -> chocolate brown ppt
+    if (has('k4_fe_cn_6')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#78350f', // Chocolate brown
+          type: 'powdery',
+          details: 'Chocolate brown precipitate of Copper Ferrocyanide Cu2[Fe(CN)6]'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: '2CuSO4 + K4[Fe(CN)6] -> Cu2[Fe(CN)6]↓ + 2K2SO4',
+        inference: 'Chocolate brown precipitate formed. Cu2+ confirmed.',
+        identifiedIon: 'Cu2+',
+        explanation: 'Copper(II) ions react with potassium ferrocyanide to form a highly characteristic chocolate-brown precipitate of copper ferrocyanide.'
+      };
+    }
+  }
+
+  // ==========================================
   // 
   return defaultOutcome;
 }
