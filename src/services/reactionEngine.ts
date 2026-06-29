@@ -397,6 +397,105 @@ export function evaluateReaction(
   }
 
   // ==========================================
+  // CATION TEST: ZINC (Zn2+)
+  // ==========================================
+  if (has('zn_so4')) {
+    // 1. Zn2+ + NaOH -> White ppt, dissolves in excess NaOH
+    if (has('na_oh')) {
+      const excess = actionHistory.includes('excess_reagent');
+      if (excess) {
+        return {
+          color: 'rgba(255, 255, 255, 0.2)',
+          precipitate: { present: false, color: '', type: 'none', details: '' },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'Zn(OH)2 + 2NaOH -> Na2ZnO2 (aq) + 2H2O',
+          inference: 'White precipitate of Zn(OH)2 dissolves in excess NaOH.',
+          identifiedIon: 'Zn2+',
+          explanation: 'Zinc hydroxide is amphoteric and reacts with excess hydroxide to form soluble sodium zincate.'
+        };
+      } else {
+        return {
+          color: 'rgba(255, 255, 255, 0.2)',
+          precipitate: {
+            present: true,
+            color: '#ffffff',
+            type: 'powdery',
+            details: 'White precipitate of Zinc Hydroxide Zn(OH)2'
+          },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'ZnSO4 + 2NaOH -> Zn(OH)2↓ + Na2SO4',
+          inference: 'White precipitate formed. Zn2+ indicated.',
+          identifiedIon: 'Zn2+',
+          explanation: 'Zinc ions react with hydroxide to precipitate white zinc hydroxide.'
+        };
+      }
+    }
+
+    // 2. Zn2+ + H2S (in alkaline medium) -> Grey/white ppt
+    if ((has('h2_s_water') || has('na2_s')) && (has('nh4_oh') || has('na_oh'))) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#e5e7eb', // dirty white
+          type: 'powdery',
+          details: 'White-grey precipitate of Zinc Sulfide ZnS'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'ZnSO4 + H2S --(base)--> ZnS↓ + H2SO4',
+        inference: 'Dirty-white precipitate formed. Group IV cation (Zn2+) indicated.',
+        identifiedIon: 'Zn2+',
+        explanation: 'Zinc sulfide precipitates in alkaline medium because the sulfide ion concentration is high enough to exceed the Ksp of ZnS.'
+      };
+    }
+  }
+
+  // ==========================================
+  // CATION TEST: NICKEL (Ni2+)
+  // ==========================================
+  if (has('ni_so4')) {
+    // 1. Ni2+ + DMG + NH4OH -> Cherry-red ppt
+    if (has('dmg_reagent') && (has('nh4_oh') || has('na_oh'))) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#e11d48', // Cherry-red
+          type: 'curdy',
+          details: 'Brilliant cherry-red precipitate of Nickel DMG complex [Ni(dmg)2]'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'Ni2+ + 2C4H8N2O2 --(NH3)--> [Ni(C4H7N2O2)2]↓ + 2H+',
+        inference: 'Cherry-red precipitate formed. Ni2+ cation confirmed.',
+        identifiedIon: 'Ni2+',
+        explanation: 'Nickel(II) ions react with Dimethylglyoxime in an ammoniacal (basic) solution to form a bright, highly insolubilized cherry-red complex.'
+      };
+    }
+
+    // 2. Ni2+ + NaOH -> Green ppt
+    if (has('na_oh')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#a7f3d0', // Pale green
+          type: 'powdery',
+          details: 'Green precipitate of Nickel Hydroxide Ni(OH)2'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'NiSO4 + 2NaOH -> Ni(OH)2↓ + Na2SO4',
+        inference: 'Green precipitate formed. Ni2+ indicated.',
+        explanation: 'Nickel(II) forms a green precipitate of Nickel(II) hydroxide with alkali.'
+      };
+    }
+  }
+
+  // ==========================================
   // 
   return defaultOutcome;
 }
