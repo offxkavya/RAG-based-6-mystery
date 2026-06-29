@@ -496,6 +496,190 @@ export function evaluateReaction(
   }
 
   // ==========================================
+  // CATION TEST: CALCIUM (Ca2+)
+  // ==========================================
+  if (has('ca_cl2')) {
+    // Calcium + Ammonium Oxalate -> white ppt
+    if (has('nh4_c2o4_aq') || has('na2_c2o4')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#ffffff',
+          type: 'crystalline',
+          details: 'White precipitate of Calcium Oxalate CaC2O4'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'CaCl2 + (NH4)2C2O4 -> CaC2O4↓ + 2NH4Cl',
+        inference: 'White precipitate formed. Ca2+ confirmed.',
+        identifiedIon: 'Ca2+',
+        explanation: 'Calcium ions react with oxalate ions to form highly insoluble calcium oxalate precipitate.'
+      };
+    }
+  }
+
+  // ==========================================
+  // CATION TEST: BARIUM (Ba2+)
+  // ==========================================
+  if (has('ba_cl2')) {
+    // Barium + Sulfate -> white ppt (BaSO4)
+    if (has('na2_so4') || has('mg_so4') || has('dil_h2so4') || has('conc_h2so4')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#ffffff',
+          type: 'powdery',
+          details: 'Heavy white precipitate of Barium Sulfate BaSO4'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'BaCl2 + H2SO4 -> BaSO4↓ + 2HCl',
+        inference: 'Thick white precipitate, insoluble in concentrated acids. Ba2+ and Sulfate confirmed.',
+        identifiedIon: 'Ba2+',
+        explanation: 'Barium ions react with sulfate ions to form barium sulfate, which is highly insoluble in water and dilute acids.'
+      };
+    }
+  }
+
+  // ==========================================
+  // CATION TEST: AMMONIUM (NH4+)
+  // ==========================================
+  if (has('nh4_cl')) {
+    // NH4+ + NaOH + heat -> Ammonia gas
+    if (has('na_oh')) {
+      if (isHeated) {
+        return {
+          color: 'rgba(255, 255, 255, 0.2)',
+          precipitate: { present: false, color: '', type: 'none', details: '' },
+          gas: {
+            present: true,
+            name: 'NH3',
+            color: 'rgba(255, 255, 255, 0.1)',
+            smell: 'pungent, ammonia smell',
+            bubbles: true
+          },
+          temperatureEffect: 'none',
+          balancedEquation: 'NH4Cl + NaOH --(heat)--> NaCl + H2O + NH3↑',
+          inference: 'Pungent smelling gas evolved. NH4+ indicated.',
+          identifiedIon: 'NH4+',
+          explanation: 'Ammonium salts react with strong alkalis on heating to release free ammonia gas. Ammonia can be detected by its pungent odor.'
+        };
+      }
+    }
+
+    // NH4+ + Nessler's reagent -> Brown ppt
+    if (has('nessler_reagent')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#7c2d12', // Reddish-brown
+          type: 'powdery',
+          details: 'Brown precipitate of Iodide of Million\'s base (3HgO.Hg(NH2)I)'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'NH4+ + 2K2[HgI4] + 4OH- -> NH2.HgO.HgI↓ (brown) + 7I- + 3H2O + 4K+',
+        inference: 'Brown precipitate formed. NH4+ cation confirmed.',
+        identifiedIon: 'NH4+',
+        explanation: 'Ammonium ions react with Nessler\'s reagent in basic medium to form a characteristic brown precipitate of basic mercury(II) amido-iodide complex.'
+      };
+    }
+  }
+
+  // ==========================================
+  // ANION TEST: CARBONATE (CO3^2-)
+  // ==========================================
+  if (has('na2_co3') && (has('dil_hcl') || has('dil_h2so4') || has('conc_h2so4') || has('conc_hcl'))) {
+    return {
+      color: 'rgba(255, 255, 255, 0.2)',
+      precipitate: { present: false, color: '', type: 'none', details: '' },
+      gas: {
+        present: true,
+        name: 'CO2',
+        color: 'rgba(255, 255, 255, 0.1)',
+        smell: 'odorless',
+        bubbles: true
+      },
+      temperatureEffect: 'none',
+      balancedEquation: 'Na2CO3 + 2HCl -> 2NaCl + H2O + CO2↑',
+      inference: 'Brisk effervescence with evolution of colorless, odorless gas. Carbonate (CO3^2-) indicated.',
+      identifiedIon: 'CO32-',
+      explanation: 'Carbonates react with dilute acids to release carbon dioxide gas which bubbles out rapidly (brisk effervescence).'
+    };
+  }
+
+  // ==========================================
+  // ANION TEST: SULFIDE (S^2-)
+  // ==========================================
+  if (has('na2_s') && (has('dil_hcl') || has('dil_h2so4') || has('conc_h2so4') || has('conc_hcl'))) {
+    return {
+      color: 'rgba(255, 255, 255, 0.2)',
+      precipitate: { present: false, color: '', type: 'none', details: '' },
+      gas: {
+        present: true,
+        name: 'H2S',
+        color: 'rgba(255, 255, 255, 0.15)',
+        smell: 'rotten eggs',
+        bubbles: true
+      },
+      temperatureEffect: 'none',
+      balancedEquation: 'Na2S + H2SO4 -> Na2SO4 + H2S↑',
+      inference: 'Colorless gas with rotten-egg smell evolved. Sulfide (S2-) indicated.',
+      identifiedIon: 'S2-',
+      explanation: 'Sulfide salts react with dilute acids to release toxic hydrogen sulfide gas, which has a distinct rotten-egg smell.'
+    };
+  }
+
+  // ==========================================
+  // ANION TEST: SULFITE (SO3^2-)
+  // ==========================================
+  if (has('na2_so3') && (has('dil_hcl') || has('dil_h2so4') || has('conc_h2so4') || has('conc_hcl'))) {
+    return {
+      color: 'rgba(255, 255, 255, 0.2)',
+      precipitate: { present: false, color: '', type: 'none', details: '' },
+      gas: {
+        present: true,
+        name: 'SO2',
+        color: 'rgba(255, 255, 255, 0.1)',
+        smell: 'burning sulfur / suffocating',
+        bubbles: true
+      },
+      temperatureEffect: 'none',
+      balancedEquation: 'Na2SO3 + H2SO4 -> Na2SO4 + H2O + SO2↑',
+      inference: 'Colorless gas with suffocating smell of burning sulfur. Sulfite (SO32-) indicated.',
+      identifiedIon: 'SO32-',
+      explanation: 'Sulfite salts react with acids to release sulfur dioxide gas.'
+    };
+  }
+
+  // ==========================================
+  // ANION TEST: NITRITE (NO2-)
+  // ==========================================
+  if (has('na_oh') || has('na_no2')) {
+    if (has('na_no2') && (has('dil_hcl') || has('dil_h2so4') || has('conc_h2so4') || has('conc_hcl'))) {
+      return {
+        color: 'rgba(254, 243, 199, 0.3)',
+        precipitate: { present: false, color: '', type: 'none', details: '' },
+        gas: {
+          present: true,
+          name: 'NO2',
+          color: '#b45309', // Light brown gas
+          smell: 'pungent, suffocating',
+          bubbles: true
+        },
+        temperatureEffect: 'none',
+        balancedEquation: '2NaNO2 + H2SO4 -> Na2SO4 + HNO2 + HNO3 + NO2↑',
+        inference: 'Brown gas evolved. Nitrite (NO2-) indicated.',
+        identifiedIon: 'NO2-',
+        explanation: 'Nitrite salts react with acids to form unstable nitrous acid, which decomposes to liberate reddish-brown nitrogen dioxide gas.'
+      };
+    }
+  }
+
+  // ==========================================
   // 
   return defaultOutcome;
 }
