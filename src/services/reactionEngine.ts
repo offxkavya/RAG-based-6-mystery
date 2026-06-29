@@ -680,6 +680,189 @@ export function evaluateReaction(
   }
 
   // ==========================================
-  // 
+  // ANION TEST: HALIDES (Cl-, Br-, I-) with AgNO3
+  // ==========================================
+  if (has('ag_no3_aq')) {
+    // 1. Chloride
+    if (has('na_cl') || has('nh4_cl')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#ffffff',
+          type: 'curdy',
+          details: 'Curdy white precipitate of Silver Chloride AgCl'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'NaCl + AgNO3 -> AgCl↓ + NaNO3',
+        inference: 'Curdy white precipitate, soluble in NH4OH. Chloride (Cl-) confirmed.',
+        identifiedIon: 'Cl-',
+        explanation: 'Chloride ions react with silver nitrate to form white curdy silver chloride, which dissolves in ammonium hydroxide due to soluble diamminesilver(I) complex formation.'
+      };
+    }
+    // 2. Bromide
+    if (has('k_br')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#fef08a', // pale yellow
+          type: 'powdery',
+          details: 'Pale yellow precipitate of Silver Bromide AgBr'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'KBr + AgNO3 -> AgBr↓ + KNO3',
+        inference: 'Pale yellow precipitate, sparingly soluble in NH4OH. Bromide (Br-) confirmed.',
+        identifiedIon: 'Br-',
+        explanation: 'Bromide ions react with silver nitrate to precipitate pale yellow silver bromide.'
+      };
+    }
+    // 3. Iodide
+    if (has('k_i')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#facc15', // yellow
+          type: 'powdery',
+          details: 'Yellow precipitate of Silver Iodide AgI'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'KI + AgNO3 -> AgI↓ + KNO3',
+        inference: 'Bright yellow precipitate, insoluble in NH4OH. Iodide (I-) confirmed.',
+        identifiedIon: 'I-',
+        explanation: 'Iodide ions react with silver nitrate to precipitate bright yellow silver iodide.'
+      };
+    }
+  }
+
+  // ==========================================
+  // NITRATE TEST (NO3-) - BROWN RING TEST
+  // ==========================================
+  if (has('k_no3') || has('pb_no3_2')) {
+    // Brown ring conditions: Nitrate + freshly prepared FeSO4 + conc H2SO4 (carefully)
+    if (has('fe_so4_aq') && has('conc_h2so4')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#78350f', // Brown layer
+          type: 'crystalline', // represent the ring
+          details: 'Brown ring of Nitrosoferrous Sulfate [Fe(H2O)5(NO)]SO4 at the junction'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'exothermic',
+        balancedEquation: '2KNO3 + 6FeSO4 + 4H2SO4 -> 3Fe2(SO4)3 + K2SO4 + 4H2O + 2[Fe(H2O)5(NO)]SO4 (ring)',
+        inference: 'Brown ring formed at the junction of the two liquids. Nitrate (NO3-) confirmed.',
+        identifiedIon: 'NO3-',
+        explanation: 'Nitrate ions are reduced to nitric oxide (NO) by iron(II) ions. NO then complexes with remaining hydrated iron(II) ions to form a brown-colored coordination complex [Fe(H2O)5(NO)]2+ which appears as a ring at the interface of sulfuric acid.'
+      };
+    }
+  }
+
+  // ==========================================
+  // ORGANIC TEST: CARBOHYDRATES / PROTEINS
+  // ==========================================
+  if (has('egg_albumin')) {
+    // 1. Biuret Test: Protein + NaOH + CuSO4 (reagents represented here by na_oh + cu_so4)
+    if (has('na_oh') && has('cu_so4')) {
+      return {
+        color: '#7c3aed', // Purple/Violet
+        precipitate: { present: false, color: '', type: 'none', details: '' },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'Protein + Cu2+ --(alkaline)--> Violet Complex',
+        inference: 'Violet coloration observed. Proteins confirmed (Biuret Test).',
+        identifiedIon: 'protein',
+        explanation: 'The Biuret test detects peptide bonds. Copper(II) ions complex with peptide nitrogen atoms in basic medium to yield a violet coordination complex.'
+      };
+    }
+    // 2. Xanthoproteic Test: Protein + conc. HNO3 + heat -> Yellow solution
+    if (has('conc_hno3')) {
+      if (isHeated) {
+        return {
+          color: '#f59e0b', // Yellow/Orange
+          precipitate: { present: false, color: '', type: 'none', details: '' },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'Protein + HNO3 (conc) --(heat)--> Yellow nitro-protein',
+          inference: 'Yellow coloration formed. Proteins confirmed (Xanthoproteic Test).',
+          identifiedIon: 'protein',
+          explanation: 'Concentrated nitric acid reacts with activated aromatic amino acids (like tyrosine and tryptophan) in proteins, nitrating the benzene ring to yield yellow nitro-compounds.'
+        };
+      }
+    }
+  }
+
+  // 3. Glucose + Fehling's Test (simulated by cu_so4 + na_oh + glucose_sol + heat)
+  if (has('glucose_sol') && has('cu_so4') && has('na_oh')) {
+    if (isHeated) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#dc2626', // Brick red
+          type: 'powdery',
+          details: 'Brick-red precipitate of Cuprous Oxide Cu2O'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'R-CHO + 2Cu2+ + 5OH- --(heat)--> R-COO- + Cu2O↓ (red) + 3H2O',
+        inference: 'Brick-red precipitate of Cu2O formed. Reducing Sugar (Glucose) confirmed.',
+        identifiedIon: 'reducing_sugar',
+        explanation: 'Fehling\'s/Benedict\'s test contains copper(II) ions in basic complex. Heating with reducing sugars reduces the copper(II) (blue) to insoluble copper(I) oxide (brick-red ppt).'
+      };
+    }
+  }
+
+  // 4. Starch + Iodine (simulated by starch_sol or starch_indicator + k_i + conc_h2so4/dil_hcl or KI oxidizes to I2)
+  // Let's make starch + KI + Conc H2SO4 release Iodine, turning starch blue-black
+  if (hasAny('starch_sol', 'starch_indicator') && has('k_i') && (has('conc_h2so4') || has('dil_hno3'))) {
+    return {
+      color: '#1e1b4b', // Very dark blue-black
+      precipitate: { present: false, color: '', type: 'none', details: '' },
+      gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+      temperatureEffect: 'none',
+      balancedEquation: '2I- + H2SO4 + O2 -> I2 + SO4(2-) + H2O; I2 + Starch -> Starch-Iodine Complex',
+      inference: 'Intense blue-black coloration observed. Starch confirmed.',
+      explanation: 'The oxidizing environment oxidizes iodide (I-) to free iodine (I2). Free iodine slips inside the helices of starch amylose, forming a coordinate complex with a characteristic deep blue-black color.'
+    };
+  }
+
+  // ==========================================
+  // SURFACE CHEMISTRY: ADSORPTION OF ACETIC ACID ON CHARCOAL
+  // ==========================================
+  if (has('acetic_acid') && has('activated_charcoal') && actionHistory.includes('filter')) {
+    return {
+      color: 'rgba(255, 255, 255, 0.1)', // filtered water-like
+      precipitate: { present: false, color: '', type: 'none', details: '' },
+      gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+      temperatureEffect: 'none',
+      balancedEquation: 'CH3COOH (aq) + Charcoal (s) -> CH3COOH (adsorbed on charcoal) + filtrate',
+      inference: 'Adsorption completed. Acetic acid molecules adsorbed on charcoal surface, reducing concentration in filtrate.',
+      explanation: 'Activated charcoal has high porosity and surface area. It adsorbs acetic acid molecules via physical adsorption (Van der Waals forces). The filtrate has a lower concentration of acid.'
+    };
+  }
+
+  // ==========================================
+  // PHENOL TEST
+  // ==========================================
+  if (has('phenol_pure') && has('fe_cl3')) {
+    return {
+      color: '#4c1d95', // Deep Violet
+      precipitate: { present: false, color: '', type: 'none', details: '' },
+      gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+      temperatureEffect: 'none',
+      balancedEquation: '6C6H5OH + FeCl3 -> H3[Fe(OC6H5)6] (violet complex) + 3HCl',
+      inference: 'Characteristic violet coloration observed. Phenolic group confirmed.',
+      identifiedIon: 'phenol',
+      explanation: 'Phenol reacts with neutral ferric chloride solution to form a soluble coordination complex of iron(III) which exhibits a deep violet/purple color.'
+    };
+  }
+
+  // If no specific reaction triggers, return default outcome
   return defaultOutcome;
 }
