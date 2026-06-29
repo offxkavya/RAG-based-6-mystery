@@ -301,6 +301,102 @@ export function evaluateReaction(
   }
 
   // ==========================================
+  // CATION TEST: FERRIC IRON (Fe3+)
+  // ==========================================
+  if (has('fe_cl3')) {
+    // 1. Fe3+ + NH4OH / NaOH -> Reddish brown ppt
+    if (has('nh4_oh') || has('na_oh') || (has('nh4_cl') && has('nh4_oh'))) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#991b1b', // Reddish-brown
+          type: 'gelatinous',
+          details: 'Reddish-brown gelatinous precipitate of Ferric Hydroxide Fe(OH)3'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'FeCl3 + 3NH4OH -> Fe(OH)3↓ + 3NH4Cl',
+        inference: 'Reddish-brown gelatinous precipitate. Group III cation (Fe3+) indicated.',
+        identifiedIon: 'Fe3+',
+        explanation: 'Iron(III) ions precipitate as reddish-brown gelatinous iron(III) hydroxide in basic medium.'
+      };
+    }
+
+    // 2. Fe3+ + KSCN -> blood red solution
+    if (has('k_scn')) {
+      return {
+        color: '#7f1d1d', // Blood red
+        precipitate: { present: false, color: '', type: 'none', details: '' },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: 'FeCl3 + 3KSCN -> [Fe(SCN)3] (aq) + 3KCl',
+        inference: 'Blood-red coloration observed. Fe3+ confirmed.',
+        identifiedIon: 'Fe3+',
+        explanation: 'Iron(III) ions form a highly soluble thiocyanatoiron(III) complex with thiocyanate ions, producing a characteristic blood-red color.'
+      };
+    }
+
+    // 3. Fe3+ + K4[Fe(CN)6] -> Prussian blue ppt
+    if (has('k4_fe_cn_6')) {
+      return {
+        color: 'rgba(255, 255, 255, 0.2)',
+        precipitate: {
+          present: true,
+          color: '#1e3a8a', // Prussian Blue
+          type: 'powdery',
+          details: 'Prussian blue precipitate of Iron(III) Ferrocyanide Fe4[Fe(CN)6]3'
+        },
+        gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+        temperatureEffect: 'none',
+        balancedEquation: '4FeCl3 + 3K4[Fe(CN)6] -> Fe4[Fe(CN)6]3↓ + 12KCl',
+        inference: 'Prussian blue precipitate formed. Fe3+ confirmed.',
+        identifiedIon: 'Fe3+',
+        explanation: 'Iron(III) ions react with ferrocyanide to form a complex ferric ferrocyanide precipitate with an intense Prussian blue color.'
+      };
+    }
+  }
+
+  // ==========================================
+  // CATION TEST: ALUMINUM (Al3+)
+  // ==========================================
+  if (has('al_cl3')) {
+    // 1. Al3+ + NH4OH/NaOH -> Gelatinous white ppt
+    if (has('nh4_oh') || has('na_oh') || (has('nh4_cl') && has('nh4_oh'))) {
+      const isExcessNaOH = has('na_oh') && actionHistory.includes('excess_reagent');
+      
+      if (isExcessNaOH) {
+        return {
+          color: 'rgba(255, 255, 255, 0.2)',
+          precipitate: { present: false, color: '', type: 'none', details: '' },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'Al(OH)3 + NaOH -> NaAlO2 (aq) + 2H2O',
+          inference: 'Gelatinous white precipitate dissolves in excess NaOH.',
+          identifiedIon: 'Al3+',
+          explanation: 'Aluminum hydroxide is amphoteric. It precipitates in the presence of hydroxide ions, but dissolves in excess sodium hydroxide to form soluble sodium aluminate.'
+        };
+      } else {
+        return {
+          color: 'rgba(255, 255, 255, 0.2)',
+          precipitate: {
+            present: true,
+            color: '#f3f4f6', // white
+            type: 'gelatinous',
+            details: 'White gelatinous precipitate of Aluminum Hydroxide Al(OH)3'
+          },
+          gas: { present: false, name: '', color: '', smell: '', bubbles: false },
+          temperatureEffect: 'none',
+          balancedEquation: 'AlCl3 + 3NH4OH -> Al(OH)3↓ + 3NH4Cl',
+          inference: 'White gelatinous precipitate formed. Group III cation (Al3+) indicated.',
+          identifiedIon: 'Al3+',
+          explanation: 'Aluminum ions precipitate as white gelatinous aluminum hydroxide in alkaline medium.'
+        };
+      }
+    }
+  }
+
+  // ==========================================
   // 
   return defaultOutcome;
 }
