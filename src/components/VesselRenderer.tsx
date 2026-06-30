@@ -74,7 +74,7 @@ export const VesselRenderer: React.FC<VesselRendererProps> = ({
       }
     }
 
-    const render = () => { return; // placeholder
+    const render = () => {
       ctx.clearRect(0, 0, width, height);
 
       // 1. Draw Bunsen Burner flame if heating
