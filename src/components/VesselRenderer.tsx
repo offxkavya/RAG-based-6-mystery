@@ -361,3 +361,5 @@ export const VesselRenderer: React.FC<VesselRendererProps> = ({
 // Extending precipitate settling particles
 
 // Extending Bunsen flame wiggle animation
+
+// Tweak thermometer gauge layout
