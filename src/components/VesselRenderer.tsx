@@ -355,3 +355,5 @@ export const VesselRenderer: React.FC<VesselRendererProps> = ({
     </div>
   );
 };
+
+// Extending bubble animation loop on July 1
