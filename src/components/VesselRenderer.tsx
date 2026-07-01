@@ -363,3 +363,5 @@ export const VesselRenderer: React.FC<VesselRendererProps> = ({
 // Extending Bunsen flame wiggle animation
 
 // Tweak thermometer gauge layout
+
+// Pouring stream coordinate updates
