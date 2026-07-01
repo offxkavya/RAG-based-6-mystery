@@ -355,13 +355,3 @@ export const VesselRenderer: React.FC<VesselRendererProps> = ({
     </div>
   );
 };
-
-// Extending bubble animation loop on July 1
-
-// Extending precipitate settling particles
-
-// Extending Bunsen flame wiggle animation
-
-// Tweak thermometer gauge layout
-
-// Pouring stream coordinate updates
