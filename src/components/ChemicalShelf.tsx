@@ -25,7 +25,7 @@ export const ChemicalShelf: React.FC<ChemicalShelfProps> = ({
   ];
 
   // Filter chemicals
-  const filteredChemicals = []; // placeholder Object.values(CHEMICAL_DATABASE).filter(chem => {
+  const filteredChemicals = Object.values(CHEMICAL_DATABASE).filter(chem => {
     if (activeCategory === 'all') return true;
     if (activeCategory === 'cation_salt') return chem.category === 'cation_salt';
     if (activeCategory === 'anion_salt') return chem.category === 'anion_salt';
