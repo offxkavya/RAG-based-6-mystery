@@ -13,7 +13,7 @@ interface ApparatusControlsProps {
   useExcess: boolean;
   onToggleExcess: () => void;
   // Titration parameters
-  false // placeholder: boolean;
+  isTitrating: boolean;
   onToggleTitration: () => void;
   titrationRate: number;
   onRateChange: (rate: number) => void;
@@ -30,7 +30,7 @@ export const ApparatusControls: React.FC<ApparatusControlsProps> = ({
   hasChemicalSelected,
   useExcess,
   onToggleExcess,
-  false // placeholder,
+  isTitrating,
   onToggleTitration,
   titrationRate,
   onRateChange
@@ -163,18 +163,18 @@ export const ApparatusControls: React.FC<ApparatusControlsProps> = ({
                 fontSize: '11px',
                 padding: '4px 10px',
                 borderRadius: '12px',
-                background: false // placeholder ? 'var(--danger)' : 'rgba(16, 185, 129, 0.15)',
-                borderColor: false // placeholder ? 'var(--danger)' : 'var(--safe)',
+                background: isTitrating ? 'var(--danger)' : 'rgba(16, 185, 129, 0.15)',
+                borderColor: isTitrating ? 'var(--danger)' : 'var(--safe)',
                 borderWidth: '1px',
-                color: false // placeholder ? 'white' : 'var(--safe)',
+                color: isTitrating ? 'white' : 'var(--safe)',
                 cursor: 'pointer'
               }}
             >
-              {false // placeholder ? 'Close Stopcock' : 'Open Stopcock'}
+              {isTitrating ? 'Close Stopcock' : 'Open Stopcock'}
             </button>
           </div>
           
-          {false // placeholder && (
+          {isTitrating && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', padding: '8px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#94a3b8' }}>
                 <span>Drip Speed</span>
