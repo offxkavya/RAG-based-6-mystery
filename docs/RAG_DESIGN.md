@@ -5,3 +5,7 @@ This document outlines the architecture, knowledge base structure, and scoring a
 The knowledge base contains syllabus-grounded documents with keywords, citations, and content. Each document represents an experiment, cation, anion or general concept.
 ## 2. Query Ranking & Scoring
 We use a custom scoring algorithm. It assigns weights to search terms found in the title and keywords, then sums them up to rank the most relevant documents.
+## 3. Sample Queries
+- 'How to test for Pb2+'
+- 'Why heat oxalic acid'
+- 'Explain brown ring test'
