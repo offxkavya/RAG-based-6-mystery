@@ -210,6 +210,7 @@ export function searchKnowledgeBase(query: string): RagResponse {
   }
 
   // Gather citations and suggestions
+  // Deduplicate citations from top results
   const citations = Array.from(new Set(results.slice(0, 2).map(r => r.citations)));
   const retrievedDocs = results.slice(0, 3).map(r => ({ title: r.title, category: r.category }));
 
