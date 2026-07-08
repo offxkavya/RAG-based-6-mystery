@@ -146,6 +146,7 @@ export function searchKnowledgeBase(query: string): RagResponse {
     let score = 0;
     
     // Keyword match (high weight)
+    // Match against each predefined keyword for scoring
     doc.keywords.forEach(keyword => {
       if (normalizedQuery.includes(keyword)) {
         score += 15;
