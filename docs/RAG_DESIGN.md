@@ -15,3 +15,5 @@ Lead forms white precipitate with HCl which dissolves in hot water. Confirmatory
 Copper forms black CuS ppt. Confirmed with K4[Fe(CN)6] giving chocolate brown ppt, or NH4OH giving deep blue tetraammine complex.
 ### Iron Cation Test (Fe3+)
 Iron forms reddish brown hydroxide ppt. Confirmed with KSCN giving blood-red coloration or K4[Fe(CN)6] giving Prussian blue.
+### Aluminum Cation Test (Al3+)
+Aluminum forms white gelatinous ppt. Confirmed by Lake Test where Al(OH)3 adsorbs blue litmus dye, forming a blue lake.
