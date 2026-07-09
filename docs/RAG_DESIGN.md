@@ -9,3 +9,5 @@ We use a custom scoring algorithm. It assigns weights to search terms found in t
 - 'How to test for Pb2+'
 - 'Why heat oxalic acid'
 - 'Explain brown ring test'
+### Lead Cation Test (Pb2+)
+Lead forms white precipitate with HCl which dissolves in hot water. Confirmatory test is with KI yielding yellow lead iodide spangles.
