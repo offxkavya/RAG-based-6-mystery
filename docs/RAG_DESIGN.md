@@ -11,3 +11,5 @@ We use a custom scoring algorithm. It assigns weights to search terms found in t
 - 'Explain brown ring test'
 ### Lead Cation Test (Pb2+)
 Lead forms white precipitate with HCl which dissolves in hot water. Confirmatory test is with KI yielding yellow lead iodide spangles.
+### Copper Cation Test (Cu2+)
+Copper forms black CuS ppt. Confirmed with K4[Fe(CN)6] giving chocolate brown ppt, or NH4OH giving deep blue tetraammine complex.
