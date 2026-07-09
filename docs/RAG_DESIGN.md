@@ -17,3 +17,5 @@ Copper forms black CuS ppt. Confirmed with K4[Fe(CN)6] giving chocolate brown pp
 Iron forms reddish brown hydroxide ppt. Confirmed with KSCN giving blood-red coloration or K4[Fe(CN)6] giving Prussian blue.
 ### Aluminum Cation Test (Al3+)
 Aluminum forms white gelatinous ppt. Confirmed by Lake Test where Al(OH)3 adsorbs blue litmus dye, forming a blue lake.
+### Nickel Cation Test (Ni2+)
+Nickel forms black NiS in basic H2S. Confirmed with Dimethylglyoxime (DMG) in NH4OH giving bright cherry-red precipitate.
