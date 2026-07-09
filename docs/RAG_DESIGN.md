@@ -19,3 +19,5 @@ Iron forms reddish brown hydroxide ppt. Confirmed with KSCN giving blood-red col
 Aluminum forms white gelatinous ppt. Confirmed by Lake Test where Al(OH)3 adsorbs blue litmus dye, forming a blue lake.
 ### Nickel Cation Test (Ni2+)
 Nickel forms black NiS in basic H2S. Confirmed with Dimethylglyoxime (DMG) in NH4OH giving bright cherry-red precipitate.
+### Ammonium Test (NH4+)
+Ammonium salts release pungent NH3 gas with NaOH. Confirmed with Nessler's reagent yielding a reddish-brown precipitate.
