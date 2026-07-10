@@ -21,3 +21,5 @@ Aluminum forms white gelatinous ppt. Confirmed by Lake Test where Al(OH)3 adsorb
 Nickel forms black NiS in basic H2S. Confirmed with Dimethylglyoxime (DMG) in NH4OH giving bright cherry-red precipitate.
 ### Ammonium Test (NH4+)
 Ammonium salts release pungent NH3 gas with NaOH. Confirmed with Nessler's reagent yielding a reddish-brown precipitate.
+### Redox Titrations (KMnO4)
+Titration of KMnO4 vs Mohr's salt (Fe2+ oxidized to Fe3+ at room temp) and Oxalic acid (oxidized to CO2, heated to 60-70C to speed up kinetics).
