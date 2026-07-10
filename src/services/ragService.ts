@@ -152,6 +152,7 @@ export function searchKnowledgeBase(query: string): RagResponse {
     // Match against each predefined keyword for scoring
     doc.keywords.forEach(keyword => {
       if (normalizedQuery.includes(keyword)) {
+        // Keyword boost score
         score += 15;
       }
     });
