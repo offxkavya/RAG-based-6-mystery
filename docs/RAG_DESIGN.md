@@ -25,3 +25,5 @@ Ammonium salts release pungent NH3 gas with NaOH. Confirmed with Nessler's reage
 Titration of KMnO4 vs Mohr's salt (Fe2+ oxidized to Fe3+ at room temp) and Oxalic acid (oxidized to CO2, heated to 60-70C to speed up kinetics).
 ### Kinetics Demos
 Study concentration and temperature effect on rates. Iodine clock reaction generates starch-iodine blue complex upon bisulfite exhaustion.
+### Organic Group Tests
+Carbohydrates tested via Molisch's and Fehling's tests. Proteins tested via Biuret (violet color) and Xanthoproteic tests (yellow color). Phenols yield violet color with FeCl3.
