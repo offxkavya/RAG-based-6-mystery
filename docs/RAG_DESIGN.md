@@ -27,3 +27,5 @@ Titration of KMnO4 vs Mohr's salt (Fe2+ oxidized to Fe3+ at room temp) and Oxali
 Study concentration and temperature effect on rates. Iodine clock reaction generates starch-iodine blue complex upon bisulfite exhaustion.
 ### Organic Group Tests
 Carbohydrates tested via Molisch's and Fehling's tests. Proteins tested via Biuret (violet color) and Xanthoproteic tests (yellow color). Phenols yield violet color with FeCl3.
+## 4. Search Fallback Mechanism
+If no matching documents are found above the scoring threshold, the engine falls back to a default guidance response suggesting common Class 12 queries.
