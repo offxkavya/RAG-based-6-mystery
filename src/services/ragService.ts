@@ -137,6 +137,9 @@ const KNOWLEDGE_BASE: KnowledgeDoc[] = [
   }
 ];
 
+/**
+ * Performs local index lookup based on terms and keywords.
+ */
 export function searchKnowledgeBase(query: string): RagResponse {
   const normalizedQuery = query.toLowerCase();
   const searchTerms = normalizedQuery.split(/\s+/).filter(t => t.length > 2);
