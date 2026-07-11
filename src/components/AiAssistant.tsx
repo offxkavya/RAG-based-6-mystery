@@ -38,6 +38,7 @@ export const AiAssistant: React.FC = () => {
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Smooth scroll down to newest message
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
