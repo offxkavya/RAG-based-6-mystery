@@ -9,6 +9,9 @@ interface Message {
   suggestions?: string[];
 }
 
+/**
+ * AiAssistant chat interface container
+ */
 export const AiAssistant: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
