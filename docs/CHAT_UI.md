@@ -3,3 +3,5 @@
 This document details the frontend implementation and message handling for the AI Lab Assistant.
 ## Message interface
 Messages contain a role ('user' | 'assistant'), text content, optional citations and suggested questions.
+## Layout Design
+The AI Assistant panel is a modern glassmorphic chat container that includes a header, optional API configuration settings, a messages feed, and input footer.
