@@ -52,6 +52,7 @@ export const AiAssistant: React.FC = () => {
   };
 
   const handleSend = async (textToSend: string) => {
+    // Do not process empty inputs
     if (!textToSend.trim()) return;
 
     const userMessage: Message = { role: 'user', content: textToSend };
