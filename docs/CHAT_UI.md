@@ -10,3 +10,5 @@ Allows optional connection to generative models (OpenAI or Gemini Flash) using k
 ## Local Storage Keys
 - 'chem_assistant_api_key': API token
 - 'chem_assistant_api_provider': Selected model provider
+## Style System
+User message bubbles are styled using primary brand colors, while assistant responses use dark glass backgrounds with subtle borders.
