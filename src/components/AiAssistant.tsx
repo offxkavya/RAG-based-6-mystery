@@ -43,6 +43,7 @@ export const AiAssistant: React.FC = () => {
   }, [messages]);
 
   const saveApiKey = (key: string, provider: 'openai' | 'gemini') => {
+    // Save keys locally for session persistence
     localStorage.setItem('chem_assistant_api_key', key);
     localStorage.setItem('chem_assistant_api_provider', provider);
     setApiKey(key);
