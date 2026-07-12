@@ -14,3 +14,5 @@ Allows optional connection to generative models (OpenAI or Gemini Flash) using k
 User message bubbles are styled using primary brand colors, while assistant responses use dark glass backgrounds with subtle borders.
 ## Loading Indicators
 A small status bubble displays 'Assistant is reading manuals...' while the network call is resolving or local RAG is fetching.
+## Citations UI
+Citations are shown underneath the response bubble as pill buttons with BookOpen icons to improve credibility.
