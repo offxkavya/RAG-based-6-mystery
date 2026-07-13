@@ -31,3 +31,5 @@ Carbohydrates tested via Molisch's and Fehling's tests. Proteins tested via Biur
 If no matching documents are found above the scoring threshold, the engine falls back to a default guidance response suggesting common Class 12 queries.
 ## 5. System Prompts & Grounding
 The LLM system prompt forces the model to stay within Class 12 practical boundaries and use the context retrieved by local vector search.
+### Gemini API Integration
+Invokes the gemini-1.5-flash endpoint using direct REST POST query with retrieval context prepended as instructions.
