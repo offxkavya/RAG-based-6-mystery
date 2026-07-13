@@ -35,3 +35,6 @@ The LLM system prompt forces the model to stay within Class 12 practical boundar
 Invokes the gemini-1.5-flash endpoint using direct REST POST query with retrieval context prepended as instructions.
 ### OpenAI API Integration
 Invokes the gpt-4o-mini completion endpoint using the REST client with chat history formatting.
+
+## Conclusion
+Phase 2 implementation provides a solid RAG-backed chemistry tutor utilizing local scoring retrieval and live LLM APIs.
