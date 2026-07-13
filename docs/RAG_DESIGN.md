@@ -33,3 +33,5 @@ If no matching documents are found above the scoring threshold, the engine falls
 The LLM system prompt forces the model to stay within Class 12 practical boundaries and use the context retrieved by local vector search.
 ### Gemini API Integration
 Invokes the gemini-1.5-flash endpoint using direct REST POST query with retrieval context prepended as instructions.
+### OpenAI API Integration
+Invokes the gpt-4o-mini completion endpoint using the REST client with chat history formatting.
