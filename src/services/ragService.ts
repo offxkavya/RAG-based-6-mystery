@@ -250,6 +250,7 @@ export async function getLiveAiResponse(
   provider: 'openai' | 'gemini' = 'openai'
 ): Promise<string> {
   const retrieval = searchKnowledgeBase(query);
+  // System instructions restricting the assistant to Class 12 scope
   const systemPrompt = `You are a helpful Class 12 CBSE/ISC Chemistry Lab Assistant.
 You must answer questions strictly in accordance with the Class 12 Practical Chemistry Syllabus.
 Use the following retrieved context from official NCERT manuals to ground your response and prevent hallucination.
