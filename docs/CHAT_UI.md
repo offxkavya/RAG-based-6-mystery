@@ -16,3 +16,5 @@ User message bubbles are styled using primary brand colors, while assistant resp
 A small status bubble displays 'Assistant is reading manuals...' while the network call is resolving or local RAG is fetching.
 ## Citations UI
 Citations are shown underneath the response bubble as pill buttons with BookOpen icons to improve credibility.
+## Error Recovery
+Exceptions in network calls or API responses fallback to printing a friendly error message suggesting the user check key configuration.
