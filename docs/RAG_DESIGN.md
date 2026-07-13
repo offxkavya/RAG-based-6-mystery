@@ -29,3 +29,5 @@ Study concentration and temperature effect on rates. Iodine clock reaction gener
 Carbohydrates tested via Molisch's and Fehling's tests. Proteins tested via Biuret (violet color) and Xanthoproteic tests (yellow color). Phenols yield violet color with FeCl3.
 ## 4. Search Fallback Mechanism
 If no matching documents are found above the scoring threshold, the engine falls back to a default guidance response suggesting common Class 12 queries.
+## 5. System Prompts & Grounding
+The LLM system prompt forces the model to stay within Class 12 practical boundaries and use the context retrieved by local vector search.
