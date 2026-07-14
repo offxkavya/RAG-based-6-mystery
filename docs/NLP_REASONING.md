@@ -3,3 +3,5 @@
 This guide covers the Class 12 Chemistry Lab simulation parser and graph-based inference rules.
 ## 1. Input Parsing Schema
 Natural language requests are evaluated for actions, chemicals, and confidence score parameters.
+## 2. Action Classification
+Uses regular expressions to extract standard actions: add, heat, stir, filter, titrate, clear, and help.
