@@ -47,6 +47,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
   // 2. Identify Chemicals from Database synonyms
   const matchedChemicals: string[] = [];
   
+      // Iterate database to map synonyms
   for (const [chemId, chem] of Object.entries(CHEMICAL_DATABASE)) {
     for (const synonym of chem.synonyms) {
       // Avoid matching sub-words like 'i' in 'dilute' or matching single letters unless they are chemical formulas
