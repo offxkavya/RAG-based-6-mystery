@@ -25,6 +25,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
 
   // 1. Determine Action keywords
   let action: ParseResult['action'] = 'unknown';
+      // Match common chemical adding verbs
   if (/\b(add|mix|pour|combine|put|introduce|drop|shake)\b/.test(normalized)) {
     action = 'add';
   } else if (/\b(heat|boil|warm|burn|flame|temp)\b/.test(normalized)) {
