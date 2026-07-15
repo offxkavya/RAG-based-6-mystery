@@ -12,3 +12,4 @@ Every chemical has synonyms list containing IUPAC names, colloquial names, and c
 ## 5. Common Names Mapping
 Maps common inputs like 'blue vitriol' to CuSO4 and 'baking soda' to NaHCO3.
 - Baking Soda -> NaHCO3 (Sodium Bicarbonate)
+- Blue Vitriol -> CuSO4 (Copper Sulfate Pentahydrate)
