@@ -51,6 +51,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
   for (const [chemId, chem] of Object.entries(CHEMICAL_DATABASE)) {
     for (const synonym of chem.synonyms) {
       // Avoid matching sub-words like 'i' in 'dilute' or matching single letters unless they are chemical formulas
+            // Prevent partial substring matching for short keys
       const regexStr = synonym.length <= 2 
         ? `\\b${escapeRegExp(synonym)}\\b`
         : `\\b${escapeRegExp(synonym)}\\b|${escapeRegExp(synonym)}`;
