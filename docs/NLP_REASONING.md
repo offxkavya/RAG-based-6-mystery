@@ -9,3 +9,5 @@ Uses regular expressions to extract standard actions: add, heat, stir, filter, t
 Matches chemical formula patterns (e.g. CuSO4, Pb(NO3)2) against synonyms from the chemical database.
 ## 4. Compound Synonyms Mapping
 Every chemical has synonyms list containing IUPAC names, colloquial names, and chemical formulas.
+## 5. Common Names Mapping
+Maps common inputs like 'blue vitriol' to CuSO4 and 'baking soda' to NaHCO3.
