@@ -56,6 +56,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
         ? `\\b${escapeRegExp(synonym)}\\b`
         : `\\b${escapeRegExp(synonym)}\\b|${escapeRegExp(synonym)}`;
         
+            // Create regex with case-insensitive option
       const regex = new RegExp(regexStr, 'i');
       if (regex.test(normalized)) {
         matchedChemicals.push(chemId);
