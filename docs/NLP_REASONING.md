@@ -15,3 +15,5 @@ Maps common inputs like 'blue vitriol' to CuSO4 and 'baking soda' to NaHCO3.
 - Blue Vitriol -> CuSO4 (Copper Sulfate Pentahydrate)
 ## 6. Query Ambiguities Resolution
 If multiple overlapping keywords are found, the parser triggers clarification prompts.
+## 7. Clarification Dialogue
+Prompts request the user to clarify if they meant SO4(2-) or SO3(2-), and NO3(-) or NO2(-).
