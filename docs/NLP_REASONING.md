@@ -17,3 +17,5 @@ Maps common inputs like 'blue vitriol' to CuSO4 and 'baking soda' to NaHCO3.
 If multiple overlapping keywords are found, the parser triggers clarification prompts.
 ## 7. Clarification Dialogue
 Prompts request the user to clarify if they meant SO4(2-) or SO3(2-), and NO3(-) or NO2(-).
+## 8. Query Type Inference
+Confidence score determines if the query is an experimental action or a RAG question.
