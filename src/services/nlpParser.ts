@@ -69,6 +69,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
   result.chemicals = Array.from(new Set(matchedChemicals));
 
   // 3. Resolve Ambiguities (e.g. "sulfate" vs "sulfite" or "nitrate" vs "nitrite")
+    // Flag sulfate vs sulfite ambiguity
   if (normalized.includes('sulfate') && normalized.includes('sulfite')) {
     result.clarificationNeeded = 'Did you mean "sulfate" (SO4 2-) or "sulfite" (SO3 2-)? Both were detected.';
     result.confidence = 0.5;
