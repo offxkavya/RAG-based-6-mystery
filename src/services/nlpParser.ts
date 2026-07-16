@@ -100,6 +100,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
     result.confidence = 0.85;
   } else {
     // Fallback confidence
+        // Standard fallback query type ranking
     result.confidence = hasActionVerb ? 0.7 : 0.3;
   }
 
