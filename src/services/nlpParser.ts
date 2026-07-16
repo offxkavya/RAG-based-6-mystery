@@ -76,6 +76,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
     return result;
   }
   
+    // Flag nitrate vs nitrite ambiguity
   if (normalized.includes('nitrate') && normalized.includes('nitrite')) {
     result.clarificationNeeded = 'Did you mean "nitrate" (NO3 -) or "nitrite" (NO2 -)?';
     result.confidence = 0.5;
