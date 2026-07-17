@@ -121,6 +121,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
     result.confidence = 0.95;
   }
 
+    // Shortcut command for anion test mapping
   if (normalized.includes('test for chloride') || normalized.includes('chloride test')) {
     result.action = 'add';
     result.chemicals = ['na_cl', 'ag_no3_aq'];
