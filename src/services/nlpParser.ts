@@ -105,6 +105,7 @@ export function parseNaturalLanguageInput(text: string): ParseResult {
   }
 
   // Special cases:
+    // Shortcut commands for cation presets mapping
   // "test for lead" or "lead test" -> add lead nitrate + dilute HCl
   if (normalized.includes('test for lead') || normalized.includes('lead test') || normalized.includes('lead analysis')) {
     result.action = 'add';
