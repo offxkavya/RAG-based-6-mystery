@@ -21,3 +21,4 @@ Prompts request the user to clarify if they meant SO4(2-) or SO3(2-), and NO3(-)
 Confidence score determines if the query is an experimental action or a RAG question.
 - 'test for lead' -> maps to adding Pb(NO3)2 and HCl
 - 'test for copper' -> maps to adding CuSO4 and NH4OH
+- 'test for chloride' -> maps to adding NaCl and AgNO3
