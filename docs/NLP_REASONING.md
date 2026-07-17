@@ -19,3 +19,4 @@ If multiple overlapping keywords are found, the parser triggers clarification pr
 Prompts request the user to clarify if they meant SO4(2-) or SO3(2-), and NO3(-) or NO2(-).
 ## 8. Query Type Inference
 Confidence score determines if the query is an experimental action or a RAG question.
+- 'test for lead' -> maps to adding Pb(NO3)2 and HCl
