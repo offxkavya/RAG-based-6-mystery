@@ -22,3 +22,5 @@ Confidence score determines if the query is an experimental action or a RAG ques
 - 'test for lead' -> maps to adding Pb(NO3)2 and HCl
 - 'test for copper' -> maps to adding CuSO4 and NH4OH
 - 'test for chloride' -> maps to adding NaCl and AgNO3
+
+NLP Parser provides mapping of text inputs to simulated reactions with high safety bounds.
