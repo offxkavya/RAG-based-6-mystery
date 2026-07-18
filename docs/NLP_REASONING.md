@@ -34,3 +34,5 @@ Determined by hydrated metal ion complexes (e.g. blue for Cu2+, yellow/brown for
 - gelatinous: Al(OH)3, Fe(OH)3
 - curdy: AgCl
 - crystalline: PbCl2
+### Gas Evolution Bubbles
+Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), brown NO2 (acidic).
