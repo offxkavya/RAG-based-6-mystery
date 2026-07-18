@@ -30,3 +30,7 @@ Evaluates mixed chemical products, states, gas evolution, and thermal properties
 Fields: color, precipitate, gas, temperatureEffect, balancedEquation, inference, explanation.
 ### Solution Color Calculations
 Determined by hydrated metal ion complexes (e.g. blue for Cu2+, yellow/brown for Fe3+).
+### Precipitate Types
+- gelatinous: Al(OH)3, Fe(OH)3
+- curdy: AgCl
+- crystalline: PbCl2
