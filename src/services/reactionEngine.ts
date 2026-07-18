@@ -32,6 +32,7 @@ export function evaluateReaction(
   const uniqueChemicals = Array.from(new Set(chemicalIds));
   
   // Default fallback (no chemicals, or just water)
+    // Initial fallback reaction outcome struct
   const defaultOutcome: ReactionOutcome = {
     color: 'rgba(255, 255, 255, 0.2)', // clear
     precipitate: { present: false, color: '', type: 'none', details: '' },
