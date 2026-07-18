@@ -26,3 +26,5 @@ Confidence score determines if the query is an experimental action or a RAG ques
 NLP Parser provides mapping of text inputs to simulated reactions with high safety bounds.
 ## 9. Reaction Reasoning Engine
 Evaluates mixed chemical products, states, gas evolution, and thermal properties.
+### ReactionOutcome Schema
+Fields: color, precipitate, gas, temperatureEffect, balancedEquation, inference, explanation.
