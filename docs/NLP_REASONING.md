@@ -28,3 +28,5 @@ NLP Parser provides mapping of text inputs to simulated reactions with high safe
 Evaluates mixed chemical products, states, gas evolution, and thermal properties.
 ### ReactionOutcome Schema
 Fields: color, precipitate, gas, temperatureEffect, balancedEquation, inference, explanation.
+### Solution Color Calculations
+Determined by hydrated metal ion complexes (e.g. blue for Cu2+, yellow/brown for Fe3+).
