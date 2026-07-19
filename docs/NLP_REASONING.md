@@ -38,3 +38,4 @@ Determined by hydrated metal ion complexes (e.g. blue for Cu2+, yellow/brown for
 Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), brown NO2 (acidic).
 - Pb(2+) + HCl -> PbCl2 (white ppt, soluble on heating)
 - Pb(2+) + KI -> PbI2 (yellow precipitate, recrystallizes as golden spangles)
+- Pb(2+) + K2CrO4 -> PbCrO4 (yellow ppt, insoluble in acetic acid)
