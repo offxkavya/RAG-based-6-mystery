@@ -149,6 +149,7 @@ export function evaluateReaction(
   // ==========================================
   // CATION TEST: LEAD (Pb2+)
   // ==========================================
+    // Lead Cation C12 reaction logic
   if (hasAny('pb_no3_2')) {
     // 1. Pb2+ + HCl -> PbCl2 white ppt
     if (hasAny('dil_hcl', 'conc_hcl')) {
