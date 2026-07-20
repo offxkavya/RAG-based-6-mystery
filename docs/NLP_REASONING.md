@@ -41,3 +41,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Pb(2+) + K2CrO4 -> PbCrO4 (yellow ppt, insoluble in acetic acid)
 - Cu(2+) + NaOH/NH4OH -> Cu(OH)2 (pale blue precipitate)
 - Cu(OH)2 + excess NH4OH -> [Cu(NH3)4]2+ (inky blue solution)
+- Cu(2+) + K4[Fe(CN)6] -> Cu2[Fe(CN)6] (chocolate brown precipitate)
