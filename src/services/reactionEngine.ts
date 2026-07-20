@@ -306,6 +306,7 @@ export function evaluateReaction(
   // ==========================================
   // CATION TEST: FERRIC IRON (Fe3+)
   // ==========================================
+    // Iron Cation C12 reaction logic
   if (has('fe_cl3')) {
     // 1. Fe3+ + NH4OH / NaOH -> Reddish brown ppt
     if (has('nh4_oh') || has('na_oh') || (has('nh4_cl') && has('nh4_oh'))) {
