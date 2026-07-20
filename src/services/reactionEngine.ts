@@ -227,6 +227,7 @@ export function evaluateReaction(
   // ==========================================
   // CATION TEST: COPPER (Cu2+)
   // ==========================================
+    // Copper Cation C12 reaction logic
   if (has('cu_so4')) {
     // 1. Cu2+ + H2S -> CuS black ppt
     if (has('h2_s_water') || has('na2_s')) {
