@@ -43,3 +43,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Cu(OH)2 + excess NH4OH -> [Cu(NH3)4]2+ (inky blue solution)
 - Cu(2+) + K4[Fe(CN)6] -> Cu2[Fe(CN)6] (chocolate brown precipitate)
 - Fe(3+) + NH4OH -> Fe(OH)3 (reddish brown gelatinous precipitate)
+- Fe(3+) + KSCN -> [Fe(SCN)]2+ (intense blood-red complex solution)
