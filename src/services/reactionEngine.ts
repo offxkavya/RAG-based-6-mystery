@@ -404,6 +404,7 @@ export function evaluateReaction(
   // ==========================================
   // CATION TEST: ZINC (Zn2+)
   // ==========================================
+    // Zinc Cation C12 reaction logic
   if (has('zn_so4')) {
     // 1. Zn2+ + NaOH -> White ppt, dissolves in excess NaOH
     if (has('na_oh')) {
