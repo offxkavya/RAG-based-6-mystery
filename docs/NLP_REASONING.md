@@ -48,3 +48,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Al(3+) + litmus + NH4OH -> Al(OH)3 (blue litmus adsorbed floating blue lake)
 - Zn(2+) + basic H2S -> ZnS (dirty white or grey precipitate)
 - Zn(2+) + excess NaOH -> sodium zincate (precipitate redissolves)
+- Ni(2+) + DMG + NH4OH -> Ni(dmg)2 (bright cherry-red complex precipitate)
