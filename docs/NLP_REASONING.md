@@ -47,3 +47,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Fe(3+) + K4[Fe(CN)6] -> Fe4[Fe(CN)6]3 (Prussian blue precipitate)
 - Al(3+) + litmus + NH4OH -> Al(OH)3 (blue litmus adsorbed floating blue lake)
 - Zn(2+) + basic H2S -> ZnS (dirty white or grey precipitate)
+- Zn(2+) + excess NaOH -> sodium zincate (precipitate redissolves)
