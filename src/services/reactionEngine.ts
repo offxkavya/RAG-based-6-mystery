@@ -364,6 +364,7 @@ export function evaluateReaction(
   // ==========================================
   // CATION TEST: ALUMINUM (Al3+)
   // ==========================================
+    // Aluminum Cation C12 reaction logic
   if (has('al_cl3')) {
     // 1. Al3+ + NH4OH/NaOH -> Gelatinous white ppt
     if (has('nh4_oh') || has('na_oh') || (has('nh4_cl') && has('nh4_oh'))) {
