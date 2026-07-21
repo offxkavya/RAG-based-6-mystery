@@ -45,3 +45,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Fe(3+) + NH4OH -> Fe(OH)3 (reddish brown gelatinous precipitate)
 - Fe(3+) + KSCN -> [Fe(SCN)]2+ (intense blood-red complex solution)
 - Fe(3+) + K4[Fe(CN)6] -> Fe4[Fe(CN)6]3 (Prussian blue precipitate)
+- Al(3+) + litmus + NH4OH -> Al(OH)3 (blue litmus adsorbed floating blue lake)
