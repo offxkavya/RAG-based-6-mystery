@@ -52,3 +52,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - NH4(+) + NaOH + heat -> NH3 gas release (pungent, blue red litmus)
 - NH4(+) + Nessler's -> Iodide of Million's base (reddish brown precipitate)
 - CO3(2-) + acid -> CO2 gas (effervescence, turns lime water milky)
+- S(2-) + acid -> H2S gas (turns lead acetate paper black)
