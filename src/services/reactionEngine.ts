@@ -824,6 +824,7 @@ export function evaluateReaction(
     }
   }
 
+    // Iodine clock reaction kinetics study
   // 4. Starch + Iodine (simulated by starch_sol or starch_indicator + k_i + conc_h2so4/dil_hcl or KI oxidizes to I2)
   // Let's make starch + KI + Conc H2SO4 release Iodine, turning starch blue-black
   if (hasAny('starch_sol', 'starch_indicator') && has('k_i') && (has('conc_h2so4') || has('dil_hno3'))) {
