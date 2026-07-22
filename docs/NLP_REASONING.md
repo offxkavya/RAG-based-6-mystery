@@ -50,3 +50,4 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Zn(2+) + excess NaOH -> sodium zincate (precipitate redissolves)
 - Ni(2+) + DMG + NH4OH -> Ni(dmg)2 (bright cherry-red complex precipitate)
 - NH4(+) + NaOH + heat -> NH3 gas release (pungent, blue red litmus)
+- NH4(+) + Nessler's -> Iodide of Million's base (reddish brown precipitate)
