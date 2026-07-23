@@ -6,6 +6,9 @@ export interface SafetyReport {
   precautions?: string[];
 }
 
+/**
+ * Scans active chemistry lists to check for dangerous mixtures.
+ */
 export function evaluateSafety(chemicalIds: string[], actionHistory: string[]): SafetyReport {
   const has = (id: string) => chemicalIds.includes(id);
   const isHeated = actionHistory.includes('heat');
