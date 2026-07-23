@@ -8,3 +8,4 @@ Checks hazard flags: isSafe, dangerLevel, hazardTitle, explanation, precautions.
 - ferrocyanides + strong acids -> toxic HCN release
 ## 3. Hydration Hazard
 Mixing water into concentrated sulfuric acid causes instantaneous steam pockets and acid splattering.
+Always add acid to water slowly with constant stirring.
