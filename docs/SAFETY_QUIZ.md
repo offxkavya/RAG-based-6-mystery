@@ -6,3 +6,5 @@ Checks hazard flags: isSafe, dangerLevel, hazardTitle, explanation, precautions.
 ## 2. Incompatible Chemicals Table
 - conc. sulfuric acid + water -> extreme heat (hydration risk)
 - ferrocyanides + strong acids -> toxic HCN release
+## 3. Hydration Hazard
+Mixing water into concentrated sulfuric acid causes instantaneous steam pockets and acid splattering.
