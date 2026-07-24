@@ -13,3 +13,5 @@ Always add acid to water slowly with constant stirring.
 Liberation of gases like H2S, Cl2, NO2, and SO2 requires ventilation cautions.
 ## 5. Organic Hazards
 Phenols are corrosive and nitric acid nitrations can trigger runaway combustion.
+
+Rule-based safety system prevents dangerous mixtures prior to vessel updates.
