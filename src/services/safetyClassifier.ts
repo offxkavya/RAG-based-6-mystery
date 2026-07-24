@@ -56,6 +56,7 @@ export function evaluateSafety(chemicalIds: string[], actionHistory: string[]): 
   }
 
   // 4. MEDIUM DANGER: Sodium Sulfide + Acids -> Toxic H2S Gas
+    // Detect H2S release hazard
   if (has('na2_s') && (has('dil_hcl') || has('dil_h2so4') || has('conc_h2so4') || has('conc_hcl') || has('dil_hno3'))) {
     return {
       isSafe: false,
