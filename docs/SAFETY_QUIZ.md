@@ -9,3 +9,5 @@ Checks hazard flags: isSafe, dangerLevel, hazardTitle, explanation, precautions.
 ## 3. Hydration Hazard
 Mixing water into concentrated sulfuric acid causes instantaneous steam pockets and acid splattering.
 Always add acid to water slowly with constant stirring.
+## 4. Toxic Gas Dangers
+Liberation of gases like H2S, Cl2, NO2, and SO2 requires ventilation cautions.
