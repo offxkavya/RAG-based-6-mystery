@@ -99,6 +99,7 @@ export function evaluateSafety(chemicalIds: string[], actionHistory: string[]): 
   }
 
   // 7. LOW/MEDIUM DANGER: Nessler\'s Reagent (Mercury Toxics)
+    // Detect heavy metal exposure hazard
   if (has('nessler_reagent') && (has('dil_hcl') || has('conc_hcl') || has('dil_h2so4') || has('conc_h2so4'))) {
     return {
       isSafe: true, // Lab simulation proceeds, but flags caution
