@@ -71,6 +71,7 @@ export function evaluateSafety(chemicalIds: string[], actionHistory: string[]): 
   }
 
   // 5. MEDIUM DANGER: Sodium Nitrite + Acids -> Toxic NO2 Gas
+    // Detect NO2 release hazard
   if (has('na_no2') && (has('dil_hcl') || has('dil_h2so4') || has('conc_h2so4') || has('conc_hcl'))) {
     return {
       isSafe: false,
