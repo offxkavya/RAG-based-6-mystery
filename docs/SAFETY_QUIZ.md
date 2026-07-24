@@ -11,3 +11,5 @@ Mixing water into concentrated sulfuric acid causes instantaneous steam pockets 
 Always add acid to water slowly with constant stirring.
 ## 4. Toxic Gas Dangers
 Liberation of gases like H2S, Cl2, NO2, and SO2 requires ventilation cautions.
+## 5. Organic Hazards
+Phenols are corrosive and nitric acid nitrations can trigger runaway combustion.
