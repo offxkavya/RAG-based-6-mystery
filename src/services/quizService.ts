@@ -22,6 +22,9 @@ const P_T = 0.20;    // Transition: probability of learning if not mastered
 const P_G = 0.25;    // Guess: probability of answering correctly if NOT mastered
 const P_S = 0.10;    // Slip: probability of answering incorrectly if mastered
 
+/**
+ * Predefined database of CBSE/ISC chemistry practical questions
+ */
 export const VIVA_QUESTIONS: QuizQuestion[] = [
   {
     id: 'q_cat_1',
