@@ -17,3 +17,5 @@ Phenols are corrosive and nitric acid nitrations can trigger runaway combustion.
 Rule-based safety system prevents dangerous mixtures prior to vessel updates.
 ## 6. Viva Quiz System
 Tracks understanding across cation, anion, titration, kinetics and organic questions.
+### Question Interface
+Properties: id, category, question, options, correctAnswerIndex, explanation.
