@@ -21,3 +21,4 @@ Tracks understanding across cation, anion, titration, kinetics and organic quest
 Properties: id, category, question, options, correctAnswerIndex, explanation.
 ### Question Categories
 Covers syllabus-focused topics including common ions effect and endpoints.
+- Cation questions cover solubility products and Nessler reaction
