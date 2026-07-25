@@ -19,3 +19,5 @@ Rule-based safety system prevents dangerous mixtures prior to vessel updates.
 Tracks understanding across cation, anion, titration, kinetics and organic questions.
 ### Question Interface
 Properties: id, category, question, options, correctAnswerIndex, explanation.
+### Question Categories
+Covers syllabus-focused topics including common ions effect and endpoints.
