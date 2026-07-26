@@ -210,6 +210,9 @@ export const VIVA_QUESTIONS: QuizQuestion[] = [
   }
 ];
 
+/**
+ * Returns baseline mastery probabilities for new students.
+ */
 export function getInitialMastery(): StudentMastery {
   return {
     cations: P_INIT,
