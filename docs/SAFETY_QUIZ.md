@@ -32,3 +32,4 @@ Contains values in [0,1] tracking learning probability for each syllabus area.
 - P(T): Transition probability
 - P(G): Guess probability
 - P(S): Slip probability
+Updates mastery using conditional probability formulas upon user submissions.
