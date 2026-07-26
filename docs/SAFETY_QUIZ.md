@@ -23,3 +23,5 @@ Properties: id, category, question, options, correctAnswerIndex, explanation.
 Covers syllabus-focused topics including common ions effect and endpoints.
 - Cation questions cover solubility products and Nessler reaction
 - Titration questions cover autocalysis and indicator mechanisms
+## 7. Adaptive Difficulty & Bayesian Tracker
+Uses Bayesian Knowledge Tracing (BKT) to update mastery probability.
