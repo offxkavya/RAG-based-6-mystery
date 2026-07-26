@@ -27,3 +27,6 @@ Covers syllabus-focused topics including common ions effect and endpoints.
 Uses Bayesian Knowledge Tracing (BKT) to update mastery probability.
 ### Mastery State Variables
 Contains values in [0,1] tracking learning probability for each syllabus area.
+### BKT Core Variables
+- P(L0): Initial probability of learning
+- P(T): Transition probability
