@@ -30,3 +30,5 @@ Contains values in [0,1] tracking learning probability for each syllabus area.
 ### BKT Core Variables
 - P(L0): Initial probability of learning
 - P(T): Transition probability
+- P(G): Guess probability
+- P(S): Slip probability
