@@ -25,3 +25,5 @@ Covers syllabus-focused topics including common ions effect and endpoints.
 - Titration questions cover autocalysis and indicator mechanisms
 ## 7. Adaptive Difficulty & Bayesian Tracker
 Uses Bayesian Knowledge Tracing (BKT) to update mastery probability.
+### Mastery State Variables
+Contains values in [0,1] tracking learning probability for each syllabus area.
