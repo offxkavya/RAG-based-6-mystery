@@ -254,6 +254,9 @@ export function updateMastery(
 
 // Select a question adaptively based on the student's mastery levels
 // It prioritizes categories with lower mastery scores
+/**
+ * Adaptive question selection prioritizing weak concepts.
+ */
 export function selectAdaptiveQuestion(
   mastery: StudentMastery,
   excludeIds: string[] = []
