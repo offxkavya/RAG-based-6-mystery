@@ -239,6 +239,7 @@ export function updateMastery(
     pL_given_obs = numerator / denominator;
   } else {
     // Probability of knowing, given they got it incorrect
+        // Posterior calculation for incorrect responses
     const numerator = currentMastery * P_S;
     const denominator = (currentMastery * P_S) + ((1 - currentMastery) * (1 - P_G));
     pL_given_obs = numerator / denominator;
