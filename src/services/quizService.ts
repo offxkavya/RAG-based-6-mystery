@@ -233,6 +233,7 @@ export function updateMastery(
 
   if (isCorrect) {
     // Probability of knowing, given they got it correct
+        // Posterior calculation for correct responses
     const numerator = currentMastery * (1 - P_S);
     const denominator = (currentMastery * (1 - P_S)) + ((1 - currentMastery) * P_G);
     pL_given_obs = numerator / denominator;
