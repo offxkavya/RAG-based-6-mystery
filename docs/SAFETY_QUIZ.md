@@ -35,3 +35,5 @@ Contains values in [0,1] tracking learning probability for each syllabus area.
 Updates mastery using conditional probability formulas upon user submissions.
 ## 8. Bayesian Posterior Equations
 Recalculates mastery depending on whether the response is correct or wrong.
+## 9. Performance Analytics
+Monitors weaker categories to select relevant target exercises.
