@@ -33,3 +33,5 @@ Contains values in [0,1] tracking learning probability for each syllabus area.
 - P(G): Guess probability
 - P(S): Slip probability
 Updates mastery using conditional probability formulas upon user submissions.
+## 8. Bayesian Posterior Equations
+Recalculates mastery depending on whether the response is correct or wrong.
