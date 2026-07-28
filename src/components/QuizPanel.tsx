@@ -4,6 +4,9 @@ import type { QuizQuestion, StudentMastery } from '../services/quizService';
 import { Award, CheckCircle, XCircle, ArrowRight, BrainCircuit } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
+/**
+ * Renders interactive quiz with progress tracking
+ */
 interface QuizPanelProps {
   mastery: StudentMastery;
   onUpdateMastery: (newMastery: StudentMastery) => void;
