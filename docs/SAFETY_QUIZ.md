@@ -42,3 +42,5 @@ Categories below threshold (0.5) trigger remedial assistance recommendations.
 Integrates progress charts, feedback modules, and next question triggers.
 ### Progress Visualizers
 Displays mastery scores using real-time linear indicator bars.
+### State Management
+Maintains current question index, selected option, and answer status.
