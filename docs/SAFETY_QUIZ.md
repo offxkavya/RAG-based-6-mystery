@@ -40,3 +40,5 @@ Monitors weaker categories to select relevant target exercises.
 Categories below threshold (0.5) trigger remedial assistance recommendations.
 ## 10. Quiz Interface Component
 Integrates progress charts, feedback modules, and next question triggers.
+### Progress Visualizers
+Displays mastery scores using real-time linear indicator bars.
