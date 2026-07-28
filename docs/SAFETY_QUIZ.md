@@ -44,3 +44,5 @@ Integrates progress charts, feedback modules, and next question triggers.
 Displays mastery scores using real-time linear indicator bars.
 ### State Management
 Maintains current question index, selected option, and answer status.
+### Explanation Modal
+Imparts immediate academic feedback describing details of the correct answer.
