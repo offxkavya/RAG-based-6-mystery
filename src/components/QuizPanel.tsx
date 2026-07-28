@@ -24,6 +24,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
   const [answeredIds, setAnsweredIds] = useState<string[]>([]);
   const [streak, setStreak] = useState(0);
 
+      // Evaluate answer and trigger mastery updates
   const handleAnswerSubmit = (optionIndex: number) => {
     if (isAnswered) return;
 
