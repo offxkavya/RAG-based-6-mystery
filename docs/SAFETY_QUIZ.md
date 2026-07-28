@@ -38,3 +38,5 @@ Recalculates mastery depending on whether the response is correct or wrong.
 ## 9. Performance Analytics
 Monitors weaker categories to select relevant target exercises.
 Categories below threshold (0.5) trigger remedial assistance recommendations.
+## 10. Quiz Interface Component
+Integrates progress charts, feedback modules, and next question triggers.
