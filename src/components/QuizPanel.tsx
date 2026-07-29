@@ -25,6 +25,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
   const [streak, setStreak] = useState(0);
 
       // Evaluate answer and trigger mastery updates
+                  // Highlight chosen answer green or red
   const handleAnswerSubmit = (optionIndex: number) => {
     if (isAnswered) return;
 
