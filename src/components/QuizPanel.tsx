@@ -50,6 +50,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
 
     // Update BKT Mastery for the category
     const cat = currentQuestion.category;
+                {/* Render student concept mastery levels */}
     const currentVal = mastery[cat];
     const updatedVal = updateMastery(currentVal, isCorrect);
     
