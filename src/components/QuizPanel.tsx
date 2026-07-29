@@ -68,6 +68,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
     setIsAnswered(false);
     
     // Select next question adaptively
+      // Load next problem matching performance metric
     const nextQ = selectAdaptiveQuestion(mastery, answeredIds);
     setCurrentQuestion(nextQ);
   };
