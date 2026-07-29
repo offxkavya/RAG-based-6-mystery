@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { selectAdaptiveQuestion, updateMastery } from '../services/quizService';
 import type { QuizQuestion, StudentMastery } from '../services/quizService';
+    // Restore baseline metrics for restarted session
 import { Award, CheckCircle, XCircle, ArrowRight, BrainCircuit } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
