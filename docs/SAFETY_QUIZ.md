@@ -47,3 +47,4 @@ Maintains current question index, selected option, and answer status.
 ### Explanation Modal
 Imparts immediate academic feedback describing details of the correct answer.
 Restarting baseline updates resets all concept statistics to 0.15.
+Shows aggregate score and concept updates on completion.
