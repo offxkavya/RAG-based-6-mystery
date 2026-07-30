@@ -54,3 +54,5 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - CO3(2-) + acid -> CO2 gas (effervescence, turns lime water milky)
 - S(2-) + acid -> H2S gas (turns lead acetate paper black)
 - Starch-iodine clock reaction: IO3- and HSO3- generates sudden blue complex
+## 10. Database Mapping
+Chemical entities map safely through localized key checks.
