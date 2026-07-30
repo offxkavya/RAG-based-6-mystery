@@ -56,3 +56,5 @@ Colorless CO2 (effervescence), toxic H2S (rotten eggs), pungent NH3 (basic), bro
 - Starch-iodine clock reaction: IO3- and HSO3- generates sudden blue complex
 ## 10. Database Mapping
 Chemical entities map safely through localized key checks.
+## 11. Kinetics Evaluation Rules
+Temperature values affect reactant velocity rates.
