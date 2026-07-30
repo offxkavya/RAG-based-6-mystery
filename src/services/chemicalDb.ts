@@ -11,6 +11,9 @@ export interface Chemical {
   hazardsDescription?: string;
 }
 
+/**
+ * Core static database of CBSE Class 12 chemistry compounds
+ */
 export const CHEMICAL_DATABASE: Record<string, Chemical> = {
   // Cations (primarily nitrates, chlorides or sulfates for testing)
   'pb_no3_2': {
